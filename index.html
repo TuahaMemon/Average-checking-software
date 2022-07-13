@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Software</title>
+</head>
+
+<body>
+    <h1>Find out Average </h1>
+
+    <form onsubmit="average();{return false;}">
+        <br>
+        <br>
+        <label>English:</label>
+        <input type="text" min="3" required placeholder="Type Number" id="a">
+        <br>
+        <br>
+        <label>Urdu:</label>
+        <input id="b" type="text" min="3" required placeholder="Type Number">
+        <br>
+        <br>
+        <label>Math:</label>
+        <input type="text" min="3" required placeholder="Type Number" id="c">
+        <br>
+        <br>
+        <label>science:</label>
+        <input type="text" min="3" required placeholder="Type Number" id="d">
+        <br>
+        <br>
+        <label>Physics:</label>
+        <input type="text" min="3"  required placeholder="Type Number" id="e">
+        <br>
+        <br>
+        <label>Computer:</label>
+        <input type="text" min="3" required placeholder="Type Number" id="f">
+        <br>
+        <br>
+        <label>Biology:</label>
+        <input type="text" min="3"required placeholder="Type Number" id="g">
+        <br>
+        <br>
+        <label>CHemistry:</label>
+        <input type="text" min="3"required placeholder="Type Number" id="h">
+        <br>
+        <br>
+        <label>Zology:</label>
+        <input type="text" min="3"required placeholder="Type Number" id="i">
+        <br>
+        <br>
+        <label>Botony</label>
+        <input type="text" min="3"required placeholder="Type Number" id="j">
+        <br>
+        <br>
+        <button value="submit">Average</button>
+    </form>
+    <h1 id="result"></h1>
+
+    <script>
+
+        // let a = ("#1")
+        // let b = ("#2")
+        // let c = ("#3")
+        // let d = ("#4")
+        // let e = ("#5")
+        // let f = ("#6")
+        // let g = ("#7")
+        // let h = ("#8")
+        // let i = ("#9")
+        // let j = ("#10")
+
+        // let average = (a + b + c + d + e + f + g + h + i + j) / 3;
+        // alert("The Average of your given numbers is:" + average);
+        function average() {
+            let a = document.querySelector("#a").value
+            let b = document.querySelector("#b").value
+            let c = document.querySelector("#c").value
+            let d = document.querySelector("#d").value
+            let e = document.querySelector("#e").value
+            let f = document.querySelector("#f").value
+            let g = document.querySelector("#g").value
+            let h = document.querySelector("#h").value
+            let i = document.querySelector("#i").value
+            let j = document.querySelector("#j").value
+            let result = a + b + c + d + e + f + g + h + i + j / 10;
+            document.querySelector("#result").innerHTML = `The Average of your given numbers is: ${result}`;
+        }
+
+
+
+
+        // var a = parseInt(prompt("Enter First Number: "));
+        // var b = parseInt(prompt("Enter Second Number: "));
+        // var c = parseInt(prompt("Enter Third Number: "));
+        // var average = (a + b + c) / 3;
+        // alert("The average of three numbers: " + average);
+    </script>
+</body>
+
+</html>
