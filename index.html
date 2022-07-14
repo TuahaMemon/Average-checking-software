@@ -15,43 +15,43 @@
         <br>
         <br>
         <label>English:</label>
-        <input type="text" min="3" required placeholder="Type Number" id="a">
+        <input type="text" min="1" required placeholder="Type Number" id="a">
         <br>
         <br>
         <label>Urdu:</label>
-        <input id="b" type="text" min="3" required placeholder="Type Number">
+        <input id="b" type="text" min="1" required placeholder="Type Number">
         <br>
         <br>
         <label>Math:</label>
-        <input type="text" min="3" required placeholder="Type Number" id="c">
+        <input type="text" min="1" required placeholder="Type Number" id="c">
         <br>
         <br>
         <label>science:</label>
-        <input type="text" min="3" required placeholder="Type Number" id="d">
+        <input type="text" min="1" required placeholder="Type Number" id="d">
         <br>
         <br>
         <label>Physics:</label>
-        <input type="text" min="3"  required placeholder="Type Number" id="e">
+        <input type="text" min="1"  required placeholder="Type Number" id="e">
         <br>
         <br>
         <label>Computer:</label>
-        <input type="text" min="3" required placeholder="Type Number" id="f">
+        <input type="text" min="1" required placeholder="Type Number" id="f">
         <br>
         <br>
         <label>Biology:</label>
-        <input type="text" min="3"required placeholder="Type Number" id="g">
+        <input type="text" min="1"required placeholder="Type Number" id="g">
         <br>
         <br>
         <label>CHemistry:</label>
-        <input type="text" min="3"required placeholder="Type Number" id="h">
+        <input type="text" min="1"required placeholder="Type Number" id="h">
         <br>
         <br>
         <label>Zology:</label>
-        <input type="text" min="3"required placeholder="Type Number" id="i">
+        <input type="text" min="1"required placeholder="Type Number" id="i">
         <br>
         <br>
         <label>Botony</label>
-        <input type="text" min="3"required placeholder="Type Number" id="j">
+        <input type="text" min="1"required placeholder="Type Number" id="j">
         <br>
         <br>
         <button value="submit">Average</button>
@@ -84,17 +84,29 @@
             let h = document.querySelector("#h").value
             let i = document.querySelector("#i").value
             let j = document.querySelector("#j").value
-            let result = a + b + c + d + e + f + g + h + i + j / 10;
+
+            a = Number(a)
+            b = Number(b)
+            c = Number(c)
+            d = Number(d)
+            e = Number(e)
+            f = Number(f)
+            g = Number(g)
+            h = Number(h)
+            i = Number(i)
+            j = Number(j)
+
+            let result = (a + b + c + d + e + f + g + h + i + j) / 10;
             document.querySelector("#result").innerHTML = `The Average of your given numbers is: ${result}`;
         }
 
 
 
 
-        // var a = parseInt(prompt("Enter First Number: "));
-        // var b = parseInt(prompt("Enter Second Number: "));
-        // var c = parseInt(prompt("Enter Third Number: "));
-        // var average = (a + b + c) / 3;
+        // let a = parseInt(prompt("Enter First Number: "));
+        // let b = parseInt(prompt("Enter Second Number: "));
+        // let c = parseInt(prompt("Enter Third Number: "));
+        // let average = (a + b + c) / 3;
         // alert("The average of three numbers: " + average);
     </script>
 </body>
